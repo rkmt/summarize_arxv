@@ -10,11 +10,14 @@ openai.api_key = 'sk-....'
 ```
 
 ## uasge:
-```console
-# arXivから論文を検索、xml形式で保存し、要約を作成
-$ python query_arxiv.py  [-d directory] "search keywords"  
 
-# ダウンロードした情報からスライド(markdown)を作成
+arXivから論文を検索、xml形式で保存し、要約を作成
+```console
+$ python query_arxiv.py  [-d directory] [-n num-papers] [-y from-year] "search keywords"  
+```
+
+ダウンロードした情報からスライド(markdown)を作成
+```
 $ python mkmd.py [-o output.md] [-d directory] "keyword"
 ```
 
@@ -23,7 +26,7 @@ directory はxmlファイルが保存されるディレクトリ
 生成された ***.md ファイルは marp (https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode ) に準拠しているので、　VS Codeで読み込めばスライド形式として閲覧したり、PDFファイルとして保存することができます：
 
 （生成例）
-<img src="./gen.png" width="640">
+<img src="./gen.png" width="480">
 
 
 
