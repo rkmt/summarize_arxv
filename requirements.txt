@@ -1,0 +1,6 @@
+arxiv
+dicttoxml
+openai
+Pillow
+PyMuPDF
+xmltodict
